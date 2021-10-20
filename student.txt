@@ -1,0 +1,4 @@
+Student name: Andy Rodriguez
+Student number: 577147
+student class: IT1A
+URL student GitHub repository: https://github.com/Andriguez/577147
