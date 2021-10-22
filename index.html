@@ -3,10 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <title> DreamWorld Travel &#45; Home</title>
+<link rel="stylesheet" href="index_style.css" />
 </head>
 <body>
-<header role="banner">
-<img src="company-logo.png"/>
+<header class="banner">
+<img class="logo" id="pc" src="company-logo.png"/>
 <h1>DreamWorld Travel</h1>
 <h2>Wherever you dream to go</h2>
 </header>
@@ -17,13 +18,13 @@
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
-<video>
+<video id="pc">
 <source src="travel-promotion-video.mp4" type="video/mp4">
 <source src="travel-promotion-video.ogg" type="video/ogg">
 </video>
 <main>
-<section>
-<article>
+<section id="grid-container">
+<article id="article1">
 <header>
 <h1>Gran Canaria</h1>
 </header>
@@ -36,9 +37,7 @@
 <label>Picture from www.istockphoto.com</label>
 </footer>
 </article>
-</section>
-<section>
-<article>
+<article id="article2">
 <header>
 <h1>Aruba</h1>
 </header>
@@ -51,9 +50,7 @@
 <label>Picture from www.istockphoto.com</label>
 </footer>
 </article>
-</section>
-<section>
-<article>
+<article id="article3">
 <header>
 <h1>Cartagena</h1>
 </header>
@@ -66,9 +63,8 @@
 <label>Picture from www.istockphoto.com</label>
 </footer>
 </article>
-</section>
-</main>
-<aside>
+
+<aside id="list-box">
 <ol>
 <h4>Next Popular Destinations</h4>
 <li>Barcelona - Spain</li>
@@ -78,7 +74,9 @@
 <li>Hawaii - USA</li>
 </ol>
 </aside>
-<footer><em>&#169; 2021 Andy Rodriguez</em></footer>
-<section><p>Cookie Statement</p></section>
+</section>
+</main>
+<footer id="author_footer"><em>&#169; 2021 Andy Rodriguez</em></footer>
+<section id="cookies"><p>Cookie Statement</p></section>
 </body>
 </html>
