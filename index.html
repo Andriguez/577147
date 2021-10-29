@@ -3,28 +3,32 @@
 <head>
 <meta charset="utf-8" />
 <title> DreamWorld Travel &#45; Home</title>
-<link rel="stylesheet" href="index_style.css" />
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="banner">
+<header>
+<section class="banner">
 <img class="logo" id="pc" src="company-logo.png"/>
 <h1>DreamWorld Travel</h1>
 <h2>Wherever you dream to go</h2>
-</header>
-<nav>
-<ul>
+</section>
+<nav class="menu">
+<input type="checkbox" id="menu_icon">
+<label for="menu_icon">&#9776;</label>
+<ul id="items">
 <li><a href="bestdestinations.html">Best Destinations</a></li>
 <li><a href="tickets.html">Tickets</a></li>
 <li><a href="contact.html">Contact</a></li>
 </ul>
 </nav>
+</header>
 <video id="pc">
 <source src="travel-promotion-video.mp4" type="video/mp4">
 <source src="travel-promotion-video.ogg" type="video/ogg">
 </video>
 <main>
-<section id="grid-container">
-<article id="article1">
+<section id="grid-container" class="index">
+<article id="index" class="article1">
 <header>
 <h1>Gran Canaria</h1>
 </header>
@@ -34,10 +38,10 @@
 <img src="gran-canaria-stock.jpg" />
 </a>
 <footer>
-<label>Picture from www.istockphoto.com</label>
+<label>article 1 Picture from www.istockphoto.com</label>
 </footer>
 </article>
-<article id="article2">
+<article id="index" class="article2">
 <header>
 <h1>Aruba</h1>
 </header>
@@ -47,10 +51,10 @@
 <img src="aruba-stock.jpg" />
 </a>
 <footer>
-<label>Picture from www.istockphoto.com</label>
+<label>article 2 Picture from www.istockphoto.com</label>
 </footer>
 </article>
-<article id="article3">
+<article id="index" class="article3">
 <header>
 <h1>Cartagena</h1>
 </header>
@@ -60,11 +64,11 @@
 <img src="cartagena-stock.jpg" />
 </a>
 <footer>
-<label>Picture from www.istockphoto.com</label>
+<label>article 3 Picture from www.istockphoto.com</label>
 </footer>
 </article>
-
-<aside id="list-box">
+</section>
+<aside class="list-box">
 <ol>
 <h4>Next Popular Destinations</h4>
 <li>Barcelona - Spain</li>
@@ -74,7 +78,7 @@
 <li>Hawaii - USA</li>
 </ol>
 </aside>
-</section>
+
 </main>
 <footer id="author_footer"><em>&#169; 2021 Andy Rodriguez</em></footer>
 <section id="cookies"><p>Cookie Statement</p></section>
