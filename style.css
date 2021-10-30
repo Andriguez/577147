@@ -37,21 +37,391 @@
 }
 @media screen and (min-width: 550px) and (max-width: 1219px)
 {
-	body{
+body
+	{
 		background-color: #b9e5b5;
 		
 	}
-	.banner{
-	background-color:#d7b4a5;
-}
-		.logo{
-	width: 50px;
-	height: 50px;
-	float: left;
+.logo
+	{
+		width: 50px;
+		height: 50px;
+		float:left;
+	}
+.banner
+	{
+		float:left;
+		background-color: #d7b4a5;
+		width: 100%;
+		height: 50px;
+		outline: solid 2px;
+	}
+.banner h1
+	{
+		
+		font-size: 20px;
+		position: relative;
+		bottom: 10px;
+		right: 7px;
+		width: 300px;
+	}
+.banner h2
+	{
+		
+		font-size: 15px;
+		position: relative;
+		bottom: 27px;
+		left: 44px;
+		width: 200px;
+	}
+nav .mobile
+	{
+		display: none;
+	}
+nav ul
+	{
+		outline: solid 2px;
+		list-style-type: none;
+		background-color: #65a1c3;
+		width: inherit;
+		text-transform: uppercase;
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+main
+	{
+		clear: both;
+	}
+	p {font-size: 19px;}
+#grid-container.index
+	{
+		background-color: #7f95b5;
+		border: solid 3px;
+		padding: 7px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+#grid-container.index article
+	{
+		background-color: #c7c8cb;
+		border: solid 2px #666;
+		text-align: center-left;
+		padding: 15px;
+	}
+#grid-container video
+{
+		flex-basis: 100%;
+		order: 2;
+		width: inherit;
+		height: 400px;
+	}
+#index.list-bx
+	{
+		flex-basis: 100%;
+		order: 1;
+		background-color: #c7c8cb;
+		border: solid 2px;
+		padding-bottom: 30px;
+		display:flex;
+		justify-content: center;
+		font-size: 25px;
+	}
+#index.article1
+	{
+		flex-basis: 100%;
+		order: 5;
+		display:grid;
+		grid-template-areas:
+		'header header'
+		'photo text';
+	}
+#index.article1 h1
+	{
+		grid-area: header;
+		display: grid;
+		justify-content: center;
+	}
+#index.article1 img
+	{
+		grid-area: photo;
+		width:90%;
+		height: 80%;
+	}
+#index.article1 p
+	{
+		grid-area: text;
+	}
+
+#index.article2
+	{
+		flex-basis: 100%;
+		order: 4;
+		display: grid;
+		grid-template-areas:
+		'header header'
+		'photo text';
+	}
+#index.article2 h1
+	{
+		grid-area: header;
+		display: grid;
+		justify-content: center;
+	}
+#index.article2 img
+	{
+		grid-area: photo;
+		width: 90%;
+		height: 80%;
+	}
+#index.article2 p
+	{
+		grid-area: text;
+	}
+#index.article3
+	{
+		flex-basis: 100%;
+		order: 3;
+		display: grid;
+		grid-template-areas:
+		'header header'
+		'photo text';
+	}
+#index.article3 h1
+	{
+		grid-area: header;
+		display: grid;
+		justify-content: center;
+	}
+#index.article3 img
+	{
+		grid-area: photo;
+		width: 90%;
+		height: 80%;
+	}
+#index.article3 p
+	{
+		grid-area: text;
+	}
+#grid-container.bestdestinations
+	{
+		background-color: #7f95b5;
+		border: solid 3px;
+		padding: 7px;
+		display: grid;
+		grid-template-columns: 50% 50%;
+	}
+
+#grid-container.bestdestinations article
+	{
+		background-color: #c7c8cb;
+		border: solid 2px;
+		text-align: center-left;
+		padding: 15px;
+	}
+#bestdestinations.article1
+	{
+		grid-column: 1/2;
+		grid-row: 1/2;
+		
+	}
+#bestdestinations.article2
+	{
+		grid-column: 2/2;
+		grid-row: 1/4;
+		
+	}
+#bestdestinations.article3
+	{
+		grid-column: 1/2;
+		grid-row: 2/5;
+	}
+#bestdestinations.article4
+	{
+		display: none;
+	}
+#bestdestinations.article5
+	{
+		grid-column: 2/2;
+		grid-row: 4/5;
+	}
+#bestdestinations.article6
+	{
+		grid-column: 1/3;
+	}
+#tickets
+	{
+		display: grid;
+		text-align:center;
+	}
+#tickets table
+	{
+		border: solid 4px;
+	}
+#tickets th
+	{
+		background-color: #d7b4a5;
+		 outline: 2px solid;
+	}
+#tickets td
+	{
+		outline: 0.5px solid;
+	}
+#tickets .grey_rows
+	{
+		background-color: #c7c8cb;
+	}
+#tickets .blue_rows
+	{
+		background-color: #7f95b5; 
+	}
+#contact
+	{
+		display: grid;
+		text-align: center;
+		grid-template-columns:70% 20%;
+		grid-column-gap: 50px;
+	}
+#contact p
+	{
+		grid-column: 1/ span 2;
+		padding: 15px;
+	}
+#contact fieldset
+	{
+		grid-column: 1;
+		height: auto;
+		display: grid;
+		justify-content: space-evenly;
+	}
+#contact .first_name
+	{
+		width: 105px;
+	}
+#contact .last_name
+	{
+		width: 105px;
+	}
+#contact .email
+	{
+		width: 160px;
+	}
+#contact .btn
+	{
+		width: 70px;
+
+	}
+#contact .code
+	{
+		width: 35px;
+	}
+#contact .phone
+	{
+		width: 78px;
+	}
+#contact .message
+	{
+		height: 140px;
+		width: 300px;	
+	}
+#index.list-bx
+	{
+		flex-basis: 100%;
+		order: 1;
+		display:flex;
+		background-color: #c7c8cb;
+		border: solid 3px;
+		padding-bottom: 30px;
+		width: 100%;
+		height: max-content;
+		justify-content: center;
+	}
+#contact.list-box
+	{
+		grid-column: 2;
+		display: inline;
+		text-align: center;
+		width: 100%;
+		height: max-content;
+	}
+
+#contact img
+	{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		right: 15px;
+		padding-bottom: 30px;
+	}
+.list-box
+	{
+		grid-column: 1/3;
+		background-color: #c7c8cb;
+		border: solid 2px;
+		padding: 15px;
+		display: grid;
+		text-align: center;
+	}
+.list-box li
+	{
+		display: inline-block;
+	}
+#bestdestinations #listproducts.product1
+	{
+		padding-right: 150px;
+	}
+#bestdestinations #listproducts.product3
+	{
+		display: none;
+	}
+#tickets #listproducts.product1
+	{
+		display: none;
+	}
+#tickets #listproducts.product2
+	{
+		padding-right: 150px;
+	}
+#bestdestinations.list-box img
+	{
+		width: 300px;
+		height: 150px;
+	}
+#tickets.list-box img
+	{
+		width: 300px;
+		height: 150px;
+	}
+#author_footer
+	{
+		outline: solid 2px;
+		background-color: #d7b4a5;
+		width: 100%;
+		height: 50px;
+		text-align: center;
+	}
+#author_footer em
+	{
+		position: relative;
+		top: 20px;
+	}
+#cookies
+	{
+		outline: solid 2px;
+		display: flex;
+		background-color:#FFF;
+		width: 150px;
+		height: 80px;
+		opacity: 50%;
+		justify-content: center;
+		position: fixed;
+		bottom: 0;
+		right: 0;
+		
+	}
 }
 
-	
-}
 @media screen and (max-width: 549px)
 {
 body
@@ -68,7 +438,6 @@ body
 .banner h1
 	{
 		font-size: 15px;
-		flex: display;
 		position: relative;
 		bottom: 12px;
 		left: 3px;
@@ -76,8 +445,6 @@ body
 .banner h2
 	{
 		font-size: 12px;
-		padding-bottom: 1px;
-		flex: display;
 		position: relative;
 		bottom: 22px;
 		left: 3px;
@@ -115,7 +482,7 @@ body
 		display: block;
 		position: absolute ;
 		z-index: 0;
-		top: 28px;
+		top: 29px;
 		right: 8px;
 	}
 	
@@ -126,10 +493,6 @@ main
 		clear: both;
 		display: flex;
 		flex-wrap: wrap;
-	}
-img
-	{
-		
 	}
  #label
 	{
@@ -155,18 +518,20 @@ img
 #index.article1
 	{
 		flex-basis: 100%;
-		order:3;
+		order:4;
 		display: grid;
 		grid-template-areas:
-		'header article'
-		'photo article';
-		grid-template-rows: min-content min-content;			
+		'header header'
+		'photo article';	
 	}
 #index.article1 h1
 	{
 		grid-area: header;
+		display: grid;
+		justify-content: center;
 		position: relative;
-		bottom: 20px;
+		left: 55px;
+		top: 20px;
 	}
 #index.article1 img
 	{
@@ -174,7 +539,7 @@ img
 		height: 100%;
 		width: 97%;
 		position: relative;
-		bottom: 50px;
+		bottom: 10px;
 	}
 #index.article1 p
 	{
@@ -184,27 +549,26 @@ img
 #index.article2
 	{
 		flex-basis: 100%;
-		order:2;
+		order:3;
 		display: grid;
 		grid-template-areas:
-		'header article'
-		'photo article';
-		grid-template-rows: min-content min-content;
-				
+		'header header'
+		'photo article'
 	}
 #index.article2 h1
 	{
 		grid-area: header;
+		display: grid;
+		justify-content: center;
 		position: relative;
-		bottom: 15px;
+		left: 25px;
+		top: 20px;
 	}
 #index.article2 img
 	{
 		grid-area: photo;
 		height: 100%;
 		width: 97%;
-		position: relative;
-		bottom: 30px;
 	}
 #index.article2 p
 	{
@@ -215,27 +579,28 @@ img
 #index.article3
 	{
 		flex-basis: 100%;
-		order:1;
+		order:2;
 		display: grid;
 		grid-template-areas:
-		'header article'
+		'header header'
 		'photo article';
-		grid-template-rows: auto;
-				
 	}
 #index.article3 h1
 	{
 		grid-area: header;
 		position: relative;
 		bottom: 15px;
+		display: grid;
+		justify-content: center;
+		position: relative;
+		left: 40px;
+		top: 20px;
 	}
 #index.article3 img
 	{
 		grid-area: photo;
-		height: 115%;
+		height: 100%;
 		width: 97%;
-		position: relative;
-		bottom: 55px;
 	}
 #index.article3 p
 	{
@@ -250,10 +615,10 @@ img
 		display: flex;
 		flex-wrap: wrap;
 	}
-#grid-container.bestdestinations > article
+#grid-container.bestdestinations article
 	{
 		background-color: #c7c8cb;
-		border: solid 2px #666;
+		border: solid 2px;
 		text-align: center-left;
 		padding: 15px;
 	}
@@ -308,91 +673,78 @@ img
 	{
 		background-color: #7f95b5; 
 	}
+#contact p
+	{
+		padding: 10px;
+		text-align: center;
+	}
 #contact fieldset
 	{
 		height: 485px;
-		
-	}
-#contact .form
-	{
 		display: grid;
-		justify-content: center;
+		justify-content: space-evenly;
 		text-align: center;
+		
 	}
 #contact .first_name
 	{
 		width: 105px;
-		position:relative;
-		left: 100px;
 	}
 #contact .last_name
 	{
 		width: 105px;
-		position: relative;
-		left: 220px;
-		bottom: 22px;
 	}
 #contact .email
 	{
-		width: 165px;
+		width: 160px;
 	}
 #contact .btn
 	{
-		width: 70px;
-		position: relative;
-		left: 180px;
+		width: 80px;
 	}
 #contact .code
 	{
-		width: 35px;
-		position: relative;
-		left: 20px;
+		width: 40px;
 	}
 #contact .phone
 	{
-		width: 78px;
-		position: relative;
-		left: 27px;
+		width: 120px;
 	}
 #contact .message
 	{
 		height: 100px;
 		width: 300px;
-		position: relative;
-		left: 70px;
 	}
-#contact .btn
+#index.list-bx
 	{
-		width: 70px;
-		position: relative;
-		left: 180px;
-	}
-#index.list-box
-	{
+		flex-basis: 100%;
 		order: 1;
 		display:flex;
-		background-color: #7f95b5;
+		background-color: #c7c8cb;
 		border: solid 3px;
 		padding-bottom: 30px;
 		width: 100%;
 		height: 115px;
 		justify-content: center;
 	}
-#index.list-box h4
+#index.list-bx h4
 	{
 		position: relative;
 		bottom: 25px;
 	}
-	#index.list-box li
+	#index.list-bx li
 	{
 		position: relative;
 		bottom: 35px;
 	}
 .list-box
 	{
-		background-color: #7f95b5;
+		background-color: #c7c8cb;
 		text-align: center;
-		
+		border: solid 2px;
+		padding: 15px;
+		flex-basis: 100%;
+		order: 5;	
 	}
 	
 .list-box li
