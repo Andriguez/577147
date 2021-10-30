@@ -22,42 +22,46 @@
 </ul>
 </nav>
 </header>
-<section>
+<section id="contact">
 <form method="post" enctype="multipart/form-data">
 <fieldset>
-<legend>Contact Us</legend>
+<legend class="legend">Contact Us</legend>
+<section class="form">
 <h3>Do you have a question or recommendation you would like to make us&#63;</h3>
 <p>
-<input type="radio" name="gender">Mr.
-<input type="radio" name="gender">Mx.
-<input type="radio" name="gender">Ms.
+<input type="radio">Mr.
+<input type="radio">Mx.
+<input type="radio">Ms.
 </p>
+
+<input type="text" name="name" placeholder="First name" class="first_name"/>
+
+<input type="text" name="last_name" placeholder="Last name" class="last_name"/>
 <p>
-Name&#42;&#58;
-<input type="text" name="name" placeholder="First name"/>
-<input type="text" name="last_name" placeholder="Last name"/>
+E&#45;mail&#42;&#58;
+<input type="email" name="email" placeholder="yourname&#64example&#46com" class="email"/>
 </p>
-<p>
-Email Address&#42;&#58;
-<input type="email" name="email" placeholder="yourname&#64example&#46com"/>
-Phone&#58;
-<input type="tel" id="phone" placeholder="xxx-xxx-xxxx"/>
+<p>Phone&#58;
+<input type="tel" class="code" placeholder="&#43;xx"/>
+<input type="tel" class="phone" placeholder="xxx&#45;xxx&#45;xxxx"/>
 </p>
-<textarea id="message" name="message" placeholder="Question&#47;Recommendation&#42;"></textarea>
+<textarea class="message" name="message" placeholder="Question&#47;Recommendation&#42;"></textarea>
 </p>
 <button type="submit" class="btn" name="submit">Submit</button>
+</section>
 </fieldset>
 </form>
 </section>
-<aside>
+<aside id="tickets" class="list-box">
+<h3>Popular Destinations</h3>
 <ol>
 <li><a href="https://v2.vliegtickets.nl/results/outbound/AMS-AKL/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="new-zealand-stock.jpg" /></a></li>
 <li><a href="https://v2.vliegtickets.nl/results/outbound/AMS-HNL/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="hawaii-stock.jpg" /></a></li>
-<li><a href="https://v2.vliegtickets.nl/results/outbound/AMS-LIR/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="costa-rica-stock.jpg" /></a><li>
+<li><a href="https://v2.vliegtickets.nl/results/outbound/AMS-LIR/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="costa-rica-stock.jpg" /></a></li>
 </ol>
-<footer><label>All pictures property of &#169; <a href="https://www.istockphoto.com/">istockphoto.com</a></label></footer>
+<footer><label id="label">All pictures property of &#169; <a href="https://www.istockphoto.com/">istockphoto.com</a></label></footer>
 </aside>
-<footer><em>&#169; 2021 Andy Rodriguez</em></footer>
-<section><p>Cookie Statement</p</section>
+<footer id="author_footer"><em>&#169; 2021 Andy Rodriguez</em></footer>
+<section id="cookies"><p>Cookie Statement</p</section>
 </body>
 </html>
