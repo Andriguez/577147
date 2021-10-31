@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8" />
 <title>DreamWorld Travel &#45; Contact</title>
-<link rel="stylesheet" href="style.css" />
+<link rel="icon" type="image/x-icon" href="img/company-logo.png">
+<link rel="stylesheet" href="css/style.css" type="text/css" />
 </head>
 <body>
 <header>
 <section class="banner">
-<img class="logo" id="pc" src="company-logo.png"/>
+<img id="logo" class="pc" src="img/company-logo.png" alt="logo"/>
 <h1>DreamWorld Travel</h1>
 <h2>Wherever you dream to go</h2>
 </section>
@@ -24,47 +25,48 @@
 </header>
 <main id="contact">
 
-<p>We would love to har from you&#33; If you have any suggestion&#47;recommendation&#47;question please don&#39;t hesitate to contact us at <a href="mailto:[contact@dreamworldtravel.com]">contact&#64;dreamworldtravel&#46;com</a> or reach us on any of our social media accounts under the username <a href=#>&#64;dreamworld&#95;tr</a>&#44; to make your life easier you could also fill out the following form and we will get back to you as soon as possible&#46;</p>
+<p>We would love to hear from you&#33; If you have any suggestion&#47;recommendation&#47;question please don&#39;t hesitate to contact us at <a href="mailto:contact@dreamworldtravel.com">contact&#64;dreamworldtravel&#46;com</a> or reach us on any of our social media accounts under the username <a href=#>&#64;dreamworld&#95;tr</a>&#44; to make your life easier you could also fill out the following form and we will get back to you as soon as possible&#46;</p>
 <form method="post" enctype="multipart/form-data">
 <fieldset>
 <legend class="legend">Contact Us</legend>
 <section class="form">
 <h3>Do you have a question or recommendation you would like to make us&#63;</h3>
-<p>
-<input type="radio">Mr.
-<input type="radio">Mx.
-<input type="radio">Ms.
-</p>
+
+<input type="radio" id="gender-female">
+<label for="gender-female">Ms&#46;</label>
+<input type="radio" id="gender-neutral"/>
+<label for="gender-neutral">Mx&#46;</label>
+<input type="radio" id="gender-male"/>
+<label for="gender-male">Mr&#46;</label>
 
 <input type="text" name="name" placeholder="First name" class="first_name"/>
 
 <input type="text" name="last_name" placeholder="Last name" class="last_name"/>
 <p>
 E&#45;mail&#42;&#58;
-<input type="email" name="email" placeholder="yourname&#64example&#46com" class="email"/>
+<input type="email" name="email" placeholder="yourname&#64;example&#46;com" class="email"/>
 </p>
 <p>Phone&#58;
 <input type="tel" class="code" placeholder="&#43;xx"/>
 <input type="tel" class="phone" placeholder="xxx&#45;xxx&#45;xxxx"/>
 </p>
 <textarea class="message" name="message" placeholder="Question&#47;Recommendation&#42;"></textarea>
-</p>
-<button type="submit" class="btn" name="submit">Submit</button>
+<button type="submit" class="btn" name="submit"><strong>Submit</strong></button>
 </section>
 </fieldset>
 </form>
 
-<aside id="contact" class="list-box">
+<aside id="list-box" class="contact">
 <h3>Popular Destinations</h3>
 <ol>
-<li><a href="https://v2.vliegtickets.nl/results/outbound/AMS-AKL/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="new-zealand-stock.jpg" /></a></li>
-<li><a href="https://v2.vliegtickets.nl/results/outbound/AMS-HNL/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="hawaii-stock.jpg" /></a></li>
-<li><a href="https://v2.vliegtickets.nl/results/outbound/AMS-LIR/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="costa-rica-stock.jpg" /></a></li>
+<li><a id="product1" class="listproducts" href="https://v2.vliegtickets.nl/results/outbound/AMS-AKL/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="img/new-zealand-stock.jpg" alt="New Zealand"/></a></li>
+<li><a id="product2" class="listproducts" href="https://v2.vliegtickets.nl/results/outbound/AMS-HNL/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="img/hawaii-stock.jpg" alt="Hawaii"/></a></li>
+<li><a id="product3" class="listproducts" href="https://v2.vliegtickets.nl/results/outbound/AMS-LIR/2022-07-17/2022-07-24/1,0,0/?airline=&departureAirports=AMS"><img src="img/costa-rica-stock.jpg" alt="Costa Rica"/></a></li>
 </ol>
 <footer><label id="label">All pictures property of &#169; <a href="https://www.istockphoto.com/">istockphoto.com</a></label></footer>
 </aside>
 </main>
 <footer id="author_footer"><em>&#169; 2021 Andy Rodriguez</em></footer>
-<section id="cookies"><p>Cookie Statement</p</section>
+<section id="cookies"><h5>Cookie Statement</h5></section>
 </body>
 </html>
